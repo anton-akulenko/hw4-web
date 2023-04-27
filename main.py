@@ -115,7 +115,7 @@ def run_socket_server(ip, port):
 
 def run_http_server():
 
-    host_addr = (DOCKER_IP, HTTP_PORT)  # 127.0.0.1
+    host_addr = ('127.0.0.1', HTTP_PORT)  # for Docker use DOCKER_IP
     http_server = HTTPServer(host_addr, HttpHandler)
     logging.warning("/\nHTTP server started.")
 
